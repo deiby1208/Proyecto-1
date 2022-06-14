@@ -1,0 +1,357 @@
+
+<!-- Los comentarios a lo largo del codigo son muy importantes nos ayudan  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>ANIME</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons --> 
+
+
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>Boku No Hero</b></h1>
+    <h6> <span class="w3-tag">Bienvenidos a U.A. </span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="img/Boku-no-Hero-Academia (1).webp" alt="Fashion Blog" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">INCRESAR</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Izuku Midorilla "Deku"</h3>
+          <h5> Protagonista </h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/izuku-midoriya-my-hero-academia-3393.webp" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+          <p><strong> Cuando era niño, Izuku admiraba mucho a los héroes y deseaba ser un héroe como su ídolo All Might, una vez que obtuviera su Don. Cuando los niños de su edad manifestaron sus particularidades, Izuku todavía no mostraba signos de desarrollar habilidades especiales. Debido a eso, su madre lo llevó a un médico quien asumió el hecho de que tiene dos articulaciones en su dedo meñique, por lo que nunca tendría un Don. 
+            Aun así, Midoriya siguió apuntando a ser un héroe y entrar a la Academia U.A.. Eso lo llevó a ser constantemente intimidado y ridiculizado por su amigo de la infancia, Katsuki Bakugo, y sus compañeros de clase, quienes creían que era imposible para alguien sin Don .Sin embargo, una reunión específica cambiaría la vida de Deku. Inesperadamente, el joven se ve involucrado en una batalla contra un villano para salvar a su amigo de la infancia. En medio de esta situación, el poderoso héroe All-Might ve en él el verdadero corazón de un héroe y decide recompensar al niño compartiendo sus propios poderes con él.
+            Después de un entrenamiento largo y duro, Deku recibe los poderes. La intención de All-Might es que Deku se convierta en su sucesor como héroe y representante de la paz. Y para prepararse para la misión, el joven va a la escuela de héroes en formación.
+            </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="img/MLR_Freya.webp" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Antonia <span class="w3-opacity w3-medium">May 3, 2006, 6:32 PM</span></h4>
+                <p>TodoDeku lOVER</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>katsuki Bakugo</h3>
+          <h5>El Explociones <h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/20461917.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
+          <p>
+            Katsuki siempre admiró a All Might cuando era joven porque el héroe número uno siempre ganaría contra las probabilidades. Mientras mira un video de él en la tienda de electrónica, Katsuki le dice a sus amigos que All Might es el mayor héroe debido a su habilidad para lograr la victoria. Algún tiempo después, Katsuki derrotó a unos cuantos alumnos de cuarto grado que se toparon con él. Con Izuku mirando a lo lejos, Katsuki dice que el héroe más sorprendente siempre gana sin importar qué.
+            Una vez que Katsuki desarrolló su Don Explosión, sus tendencias agresivas se transformaron en hostigamiento atroz. Él fue constantemente elogiado por su poderoso Don y desarrolló un complejo de superioridad retorcido como un niño pequeño. Creyendo ser mejor que todos los demás, Katsuki miró hacia abajo en Izuku especialmente porque carecía de un Don.
+            </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/MLR_Heimdall.webp" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Heimdall<span class="w3-opacity w3-medium">April 10, 2015, 7:22 PM</span></h4>
+                <p>Que aburrido eres Jormungand.</p>
+              </div> 
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/MLR_Loki_adulto.webp" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Loki <span class="w3-opacity w3-medium">April 8, 2015, 10:32 PM</span></h4>
+                <p>No seas odioso Heimdall deja en paz a mi hijo.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/MLR_Frey.webp" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Frey <span class="w3-opacity w3-medium">April 7, 2015, 9:12 PM</span></h4>
+                <p>Padre tu favorito es Jormungand siempre lo defiendes!</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Shoto Todoroki</h3>
+          <h5> El Emo Evangelizado</h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/794675.webp" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+          <p><strong> Shoto fue concebido por medio de un matrimonio arreglado de Dones, el cuál se basa en el método de la eugenesia y que consiste en llevar a cabo un matrimonio con Dones fuertes con la finalidad de que el hijo nazca ya sea con una fusión de los Dones de sus progenitores o directamente con una evolución más fuerte de estos.
+            Shoto fue el último hijo del matrimonio entre Enji Todoroki y Rei, debido a que había nacido con la combinación perfecta de singularidades en base a la vista de su padre Endeavor. Apenas Shoto cumplió cinco años, fue forzado por su padre a someterse a un duro entrenamiento con él para poder moldear tempranamente su Don y así a futuro superase a All Might.
+            Enji también impidió que Shoto interactuara con sus hermanos, quienes no tenían que entrenar y podían jugar. Shoto pronto comenzó a despreciar su formación y resentía a Endeavor por abusar de él y de su madre.
+            
+            </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="img/MLR_Freya.webp" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Antonia <span class="w3-opacity w3-medium">May 3, 2006, 6:32 PM</span></h4>
+                <p>TodoDeku lOVER</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>All Might</h3>
+          <h5> ¡Number one hero! </h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/descarga (1).jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+          <p><strong> All Might nació sin don cuando en el mundo donde el mal corría desenfrenado debido a la influencia de All for One. Las tasas de criminalidad estaban aumentando porque los ciudadanos no tenían ningún héroe en el que creer.
+            Durante su adolescencia, conoció a Nana Shimura, que era como una figura maternal para él. Le dijo a Nana que quería crear un mundo donde todos pudieran sonreír y vivir felices juntos. Para que eso suceda, el mundo necesitaba un «Símbolo de la paz» para inspirar una nueva era de armonía. Él creía que podía convertirse en alguien inspirador para las personas.Ella le pasó el One for All, convirtiéndose en el octavo usuario del don.
+            Cuando asistió a la Academia U.A., Gran Torino, amigo de Nana, se convirtió en su maestro. El físico de All Might era lo suficientemente fuerte para entrenar con el poder al 100%, por lo que Gran Torino se centró principalmente en enseñarle cómo pelear adecuadamente, aunque sus métodos de entrenamiento eran tan duros que accidentalmente le infundió un miedo innato.
+            
+            </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="img/MLR_Freya.webp" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Antonia <span class="w3-opacity w3-medium">May 3, 2006, 6:32 PM</span></h4>
+                <p>TodoDeku lOVER</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Mirio Togata</h3>
+          <h5> Monito Del Fall Out Mamado </h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/thumb-1920-946093.png" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+          <p><strong> Cuando era un niño pequeño, Mirio cayó accidentalmente en un río pero fue salvado por un Héroe Profesional. Este evento marcó su decisión de convertirse también en un héroe para salvar a otros. Aunque su padre consideró que debido a su Don, sería un objetivo difícil de lograr, Mirio no se desanimó y pasó el resto de sus años entrenando para mejorar el control de su Don y cumplir su sueño.
+
+            Durante el tercer grado conoció a Tamaki Amajiki, un nuevo estudiante transferido que no pudo presentarse adecuadamente debido a su incomodidad social y como resultado no pudo hacer amigos. Mirio se le acercó después de darse cuenta de que Tamaki estaba tratando de decir que le gustan los Héroes; Fue este reconocimiento el que inició la amistad entre Tamaki y Mirio.
+            </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="img/MLR_Freya.webp" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Antonia <span class="w3-opacity w3-medium">May 3, 2006, 6:32 PM</span></h4>
+                <p>TodoDeku lOVER</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="img/痛みは一時的なものです.png"  style="width:100%" >
+        <div class="w3-container w3-black">
+          <h4> leguion Anime <h4>
+          <p> Siguenos para saber todo acerca de tus animes y mangas favoritos </p>
+        </div>
+      </div>
+    
+
+
+
+     
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Manga</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Deku</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Tokio</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Anime</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">U.A.</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Heroes</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Accion</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ficcion</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Villanos</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Peleas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Estudiantes</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Dones</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Poderes</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shonen</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Otro Personajes</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p><img src="img/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f55797732525976386e6778574a673d3d2d3638333432353635332e3135376262623563656630363434.png" alt="Jeans" style="width:100%"></p>
+            <p><img src="img/Tenya_tranquiliza_a_Izuku.webp" alt="Jeans" style="width:100%"></p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="img/descarga.jpg" alt="Jeans" style="width:100%" class="w3-grayscale"></p>
+            <p><img src="img/2161f495d1e02d63423c970f1c95864b.jpg" alt="Jeans" style="width:100%"></p>
+         </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Me</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container " style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
